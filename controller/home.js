@@ -1,0 +1,34 @@
+$("#che1").click(function(){
+  $.ajax({
+      method: "GET",
+      url: "../edocument/src/admin/home.html", 
+      success: function(data){
+      $("#showContent").html(data); 
+    }
+  });
+})
+
+
+Swal.fire({
+  title: 'Do you want to save the changes?',
+  showDenyButton: true,
+  showCancelButton: true,
+  confirmButtonText: `Save`,
+  denyButtonText: `Don't save`,
+}).then((result) => {
+  /* Read more about isConfirmed, isDenied below */
+  if (result.isConfirmed) {
+    Swal.fire('Saved!', '', 'success')
+  } else if (result.isDenied) {
+    Swal.fire('Changes are not saved', '', 'info')
+  }
+})
+
+
+Swal.fire({
+  position: 'top-end',
+  icon: 'success',
+  title: 'Your work has been saved',
+  showConfirmButton: false,
+  timer: 1500
+})
