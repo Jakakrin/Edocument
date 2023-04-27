@@ -1,0 +1,239 @@
+<div class="card-body" id="slidingDiv">
+  <div class="card-body text-center" style="color: #000000">
+    <h3><b>แบบฟอร์มการรับฟังข้อคิดเห็นและข้อเสนอแนะ</b></h3>
+  </div>
+<div class="card text-left">
+<div class="content-header">
+
+  <div class="card-body">
+    <div class="form-row">
+      <div class="col-md-12">
+        <div class="input-group-prepend mt-3">
+          <span
+            class="input-group-text"
+            style="background: #406278; color: #ffffff">เรื่องร้องเรียน</span>
+          <select
+            class="form-control"
+            type="varchar"
+            id="Topic_story"
+            name=""
+            id="exampleInputid"
+            required=""
+            style="background: rgb(229, 227, 231)"
+            onkeyup="chk_val()"
+          > <option selected="selected">---เรื่องร้องเรียน---</option>
+          </select>
+          <!-- <p id="txt_chk" class="input-group-text"></p> -->
+        </div>
+      </div>
+    
+      <div class="col-md-12">
+        <div class="input-group-prepend mt-3">
+          <span
+            class="input-group-text"
+            style="background:  #406278; color: #ffffff">เนื้อหาข้อมูล</span>
+            
+          <textarea
+            class="form-control"
+            type="text"
+            id="infor_improv"
+            name="infor_improv"
+            aria-rowcount=""
+            required=""
+            rows="7"
+            style="background: rgb(229, 227, 231)"
+            onkeyup="chk_val()"
+          ></textarea>
+          <!-- <p id="txt_chk" class="input-group-text"></p> -->
+        </div>
+      </div>
+
+      <div class="col-md-12">
+        <div class="input-group-prepend mt-3">
+          <span
+            class="input-group-text"
+            style="background:  #406278; color: #ffffff">ข้อเสนอแนะ</span>
+
+          <textarea
+            class="form-control select2"
+            type="text"
+            id="idea_improv"
+            name="idea_improv"
+            rows="3"
+            required=""
+            style="background: rgb(229, 227, 231)"
+            onkeyup="chk_val()"
+          ></textarea>
+          <!-- <p id="txt_chk" class="input-group-text"></p> -->
+        </div>
+      </div>
+
+    <div class="col-md-12">
+      <div class="input-group-prepend mt-3">
+        <span
+          class="input-group-text"
+          style="background:  #406278; color: #ffffff">ชื่อ - นามสกุล</span>
+            
+        <input
+          class="form-control"
+          type="text"
+          id="name_improv"
+          name="name_improv"
+          required=""
+          style="background: rgb(229, 227, 231)"
+          onkeyup="chk_val()"
+        />
+        <!-- <p id="txt_chk" class="input-group-text"></p> -->
+      </div>
+    </div>
+
+
+    <div class="col-md-12">
+      <div class="input-group-prepend mt-3">
+        <span
+          class="input-group-text"
+          style="background:  #406278; color: #ffffff">ที่อยู่</span>
+
+        <input
+          class="form-control"
+          type="text"
+          id="address_improv"
+          name="address_improv"
+          required=""
+          style="background: rgb(229, 227, 231)"
+          onkeyup="chk_val()"
+        />
+        <!-- <p id="txt_chk" class="input-group-text"></p> -->
+      </div>
+    </div>
+    
+    <div class="col-md-3">
+      <div class="input-group-prepend mt-3">
+        <span
+          class="input-group-text"
+          style="background:  #406278; color: #ffffff">ตำบล</span>
+
+        <input
+          class="form-control"
+          type="text"
+          id="post_improv"
+          name="post_improv"
+          required=""
+          style="background: rgb(229, 227, 231)"
+          onkeyup="chk_val()"
+        />
+        <!-- <p id="txt_chk" class="input-group-text"></p> -->
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="input-group-prepend mt-3">
+        <span
+          class="input-group-text"
+          style="background:  #406278; color: #ffffff">อำเภอ</span>
+
+        <input
+          class="form-control"
+          type="text"
+          id="post_improv"
+          name="post_improv"
+          required=""
+          style="background: rgb(229, 227, 231)"
+          onkeyup="chk_val()"
+        />
+        <!-- <p id="txt_chk" class="input-group-text"></p> -->
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="input-group-prepend mt-3">
+        <span
+          class="input-group-text"
+          style="background:  #406278; color: #ffffff">จังหวัด</span>
+
+        <select
+          class="form-control select"
+          type=""
+          id="Province"
+          name=""
+          required=""
+          style="background: rgb(229, 227, 231)"
+          onkeyup="chk_val()"
+        > <option selected="selected">---กรุณาเลือกจังหวัด---</option>
+        </select>
+        <!-- <p id="txt_chk" class="input-group-text"></p> -->
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="input-group-prepend mt-3">
+        <span
+          class="input-group-text"
+          style="background:  #406278; color: #ffffff">รหัสไปรษณีย์</span>
+
+        <input
+          class="form-control"
+          type="text"
+          id="post_improv"
+          name="post_improv"
+          required=""
+          style="background: rgb(229, 227, 231)"
+          onkeyup="chk_val()"
+        />
+        <!-- <p id="txt_chk" class="input-group-text"></p> -->
+      </div>
+    </div>
+
+
+    <div class="col-md-6">
+      <div class="input-group-prepend mt-3">
+        <span
+          class="input-group-text"
+          style="background:  #406278; color: #ffffff">เบอร์โทรติดต่อ</span>
+
+        <input
+          class="form-control"
+          type="text"
+          id="phone_improv"
+          name="phone_improv"
+          required=""
+          style="background: rgb(229, 227, 231)"
+          onkeyup="chk_val()"
+          />
+        <!-- <p id="txt_chk" class="input-group-text"></p> -->
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="input-group-prepend mt-3">
+        <span
+          class="input-group-text"
+          style="background:  #406278; color: #ffffff">E-mail</span>
+
+        <input
+          class="form-control"
+          type="text"
+          id="email_improv"
+          name="email_improv"
+          required=""
+          style="background: rgb(229, 227, 231)"
+          onkeyup="chk_val()"
+        />
+        <!-- <p id="txt_chk" class="input-group-text"></p> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="text-center">
+  <div class="center">
+    <input type="button" id="improv" value="ส่งแบบร้องเรียน"class="btn btn-primary"/>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<script src="../controller/form_improv.js"></script>

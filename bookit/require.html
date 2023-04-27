@@ -1,0 +1,159 @@
+<div class="card-body" id="slidingDiv">
+    <div class="card-body text-center" style="color: #000000">
+      <h3><b>แบบฟอร์มข้อเสนอแนะของผู้ใช้งานระบบ</b></h3>
+      <p>รับข้อเสนอแนะของทุกฝ่ายที่ใช้บริการระบบของสถาบันพัฒนาการเด็กราชนครินทร์</p>
+    </div>
+  <div class="card text-left">
+  <div class="content-header">
+  
+    <div class="card-body">
+    <div class="form-row">
+      <div class="col-12">
+        <div style="margin-bottom: 6px">
+          <div class="input-group-prepend mt-3">
+            <span
+              class="input-group-text"
+              style="background: #406278; color: #ffffff">เรื่อง :
+            </span>
+              <input
+            class="form-control"
+            type="text"
+            id="sub_require"
+            name="sub_require"
+            id="exampleInputid"
+            required=""
+            style="background: rgb(229, 227, 231)"
+            onkeyup="chk_val()"
+          >
+            
+            <!-- <p id="txt_chk" class="input-group-text"></p> -->
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-12">
+        <div style="margin-bottom: 6px">
+          <div class="input-group-prepend mt-3">
+            <span
+              class="input-group-text"
+              style="background:  #406278; color: #ffffff">เนื้อหา :
+            </span>
+              
+            <textarea
+              class="form-control input-lg"
+              type="text"
+              id="detail"
+              name="detail"
+              rows="5"
+              required=""
+              style="background: rgb(229, 227, 231)"
+              onkeyup="chk_val()"
+            ></textarea>
+            <!-- <p id="txt_chk" class="input-group-text"></p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col-12">
+        <div style="margin-bottom: 6px">
+          <div class="input-group-prepend mt-3">
+            <span
+              class="input-group-text"
+              style="background:  #406278; color: #ffffff">ข้อเสนอแนะ/ควรปรับปรุง :</span>
+  
+            <textarea
+              class="form-control input-lg"
+              type="text"
+              id="sugges"
+              name="sugges"
+              required=""
+              style="background: rgb(229, 227, 231)"
+              onkeyup="chk_val()"
+            ></textarea>
+            <!-- <p id="txt_chk" class="input-group-text"></p> -->
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-12">
+        <div style="margin-bottom: 6px">
+          <div class="input-group-prepend mt-3">
+            <span
+              class="input-group-text"
+              style="background:  #406278; color: #ffffff">ชื่อ-สกุล :
+            </span>
+              
+            <input
+              class="form-control input-lg"
+              type="text"
+              id="name_require"
+              name="name_require"
+              required=""
+              style="background: rgb(229, 227, 231)"
+              onkeyup="chk_val()"
+            />
+            <!-- <p id="txt_chk" class="input-group-text"></p> -->
+          </div>
+        </div>
+      </div>
+  
+        <div class="col-12">
+          <div style="margin-bottom: 6px">
+            <div class="input-group-prepend mt-3">
+              <span
+                class="input-group-text"
+                style="background:  #406278; color: #ffffff">เบอร์โทรติดต่อ :
+              </span>
+  
+              <input
+                class="form-control input-lg"
+                type="text"
+                id="phone_require"
+                name="phone_require"
+                required=""
+                style="background: rgb(229, 227, 231)"
+                onkeyup="chk_val()"
+              />
+              <!-- <p id="txt_chk" class="input-group-text"></p> -->
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-12">
+          <div style="margin-bottom: 6px">
+            <div class="input-group-prepend mt-3">
+              <span
+                class="input-group-text"
+                style="background:  #406278; color: #ffffff">E-mail :
+              </span>
+  
+              <input
+                class="form-control input-lg"
+                type="text"
+                id="email_require"
+                name="email_require"
+                required=""
+                style="background: rgb(229, 227, 231)"
+                onkeyup="chk_val()"
+              />
+              <!-- <p id="txt_chk" class="input-group-text"></p> -->
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+  <div class="text-center">
+    <button href="#" type="button" id="finish_req" class="btn btn-success btn-lg col-sm-auto ">ยืนยัน</button>
+  <button href="#" type="cancel" class="btn btn-danger btn-lg col-sm-auto ">ยกเลิก</button>
+</div>
+  </div>
+  
+  </div>
+
+</div>
+
+
+<script src="../controller/form_require.js"></script>
